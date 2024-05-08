@@ -911,10 +911,10 @@
       ]
     },
     "domain": {
-      "upperlat": 42.3,
-      "lowerlat": 36.8,
-      "leftlon": -9.8,
-      "rightlon": -6.0
+      "upperlat": 42.638735,
+      "lowerlat": 36.1982613,
+      "leftlon": -9.994626,
+      "rightlon": -5.8457397
     }
   },
   "focal": [
