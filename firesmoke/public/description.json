@@ -954,10 +954,10 @@
         }
       ],
       "domain": {
-        "upperlat": 39.3925,
-        "lowerlat": 39.375,
-        "leftlon": -8.08,
-        "rightlon": -8.0292
+        "upperlat": 42.3,
+        "lowerlat": 36.8,
+        "leftlon": -9.8,
+        "rightlon": -6.0
       },
       "predictions": {
         "co": [
