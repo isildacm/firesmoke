@@ -55,7 +55,7 @@ const FireNav = () => {
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
-              {t("smokestorm")}
+              {t("Firestorm")}
             </a>
           </li>
         </ul>
