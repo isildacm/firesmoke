@@ -26,8 +26,8 @@ const MethodologyContent = () => {
           dangerouslySetInnerHTML={{ __html: t.raw("models_description") }}
         ></p>
         <img
-          src="http://gestao.tncreate.pt/upload/iqa/6rzyuWc8/img/content/Dewu5jYV/thumbs/esquema_previsao_web_page.png"
-          alt="WRF-CHIMERE"
+          src="/esquema_BRAMS_SFIRE.jpg" 
+          alt="BRAMS" width="1167" height="569"
         />
       </div>
       <h2
@@ -101,10 +101,10 @@ const MethodologyContent = () => {
         </tbody>
       </table>
 
-      <h2 className="mt-4">{t.raw("smokestorm")}</h2>
+      <h2 className="mt-4">{t.raw("Firesmoke")}</h2>
 
       <p
-        dangerouslySetInnerHTML={{ __html: t.raw("smokestorm_description") }}
+        dangerouslySetInnerHTML={{ __html: t.raw("Firesmoke_description") }}
       ></p>
 
       <video className="mx-auto d-block" width="75%" height="" controls>
