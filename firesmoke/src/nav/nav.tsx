@@ -20,8 +20,8 @@ const FireNav = () => {
       <Container fluid>
         <Navbar.Brand>
           <Image
-            alt="SmokeStorm"
-            src="/smokestorm_logo.jpg"
+            alt="Firesmoke"
+            src="/Firesmoke_logo.jpg"
             width={53}
             height={30}
           ></Image>
@@ -50,12 +50,12 @@ const FireNav = () => {
           </li>
           <li className="nav-item">
             <a
-              href={`http://smokestorm.web.ua.pt`}
+              href={`http://firesmoke.web.ua.pt/`}
               className="nav-link active"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
-              {t("Firestorm")}
+              {t("Firesmoke")}
             </a>
           </li>
         </ul>
