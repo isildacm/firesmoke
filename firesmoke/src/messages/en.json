@@ -2,43 +2,43 @@
   "Index": {
     "sidebar": {
       "title": {
-        "poluents": "Impacto dos incêndios florestais na qualidade do ar",
-        "indexes": "Qualidade do ar",
-        "focal": "Foco de incêndio",
-        "back": "Voltar",
-        "subtitle": "Previsão numérica realizada com o modelo SmokeStorm"
+        "poluents": "Impact of Forest Fires on Air Quality",
+        "indexes": "Air Quality",
+        "focal": "Fire Focus",
+        "back": "Back",
+        "subtitle": "Numerical Forecast Using the BRAMS Model"
       },
-      "available_poluents": "Escolha uma variável",
-      "prediction_time": "Previsão:",
-      "run_prediction": "Correr Previsão",
-      "stop_run": "Parar",
+      "available_poluents": "Choose a variable",
+      "prediction_time": "Forecast:",
+      "run_prediction": "Run Forecast",
+      "stop_run": "Stop",
       "marker_legend": "to be defined"
     },
     "poluents": {
-      "smoke": "Fumo",
+      "smoke": "Smoke",
       "o3": "O<sub>3</sub>",
       "pm10": "PM<sub>10</sub>",
       "pm25": "PM<sub>2.5</sub>",
       "no2": "NO<sub>2</sub>",
-      "visibility": "Visibilidade",
+      "visibility": "Visibility",
       "co": "CO",
-      "iqa": "de qualidade do ar"
+      "iqa": "of air quality"
     },
     "scale": {
-      "very_good": "Muito Bom",
-      "good": "Bom",
-      "average": "Médio",
-      "weak": "Fraco",
-      "bad": "Mau"
+      "very_good": "Very Good",
+      "good": "Good",
+      "average": "Medium",
+      "weak": "Weak",
+      "bad": "Poor"
     }
   },
   "Methodology": {
-    "title": "Methodology",
-    "general_content": "This is a simple HTML webpage with text, a table, and pictures/movies.",
-    "fires": "Fires Considered",
-    "lorem_ipsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula ipsum quis nunc ultrices, in dignissim tellus viverra. Sed tristique,mauris quis fermentum tincidunt, libero justo mattis elit, vel laoreetodio turpis nec libero. In efficitur justo nec justo consequat, vitaeconvallis lectus suscipit. Proin et odio sit amet odio convallisfringilla. Suspendisse potenti. Sed et cursus arcu. Curabitur vel nequeeget metus ullamcorper posuere vel id ligula. Maecenas a fringillavelit, sit amet tincidunt dui. Integer non efficitur nisi. Nullafacilisi. Vivamus auctor auctor urna, vitae tincidunt liberopellentesque eu. Nunc vel mi id lectus gravida dictum. Quisque idbibendum nulla. Sed sollicitudin, odio ac fermentum ultrices, lacus orcifacilisis justo, nec interdum metus orci vitae ex.",
+    "title": "FIRESMOKE System",
+    "general_content": "In the FIRESMOKE project, an existing model that forecasts weather and air quality (BRAMS) in the short term and in real-time was developed and coupled with a surface wildfire propagation model (SFIRE). The goal of this development was to estimate the behavior of fire plumes in real-time, not only of fires on the forest surface but also those originating in the tree canopies, thus simulating fires in areas with complex forest fuels and creating an integrated fire forecasting system. With this model, we obtain a direct relationship between the feedbacks of atmospheric dynamics, chemistry, and thermodynamics with the fire, allowing for the monitoring of air quality and the dispersion trajectories of smoke pollutants, as well as anthropogenic and biogenic pollutants. This FIRESMOKE forecasting system was created based on the results of BRAMS model simulations over mainland Portugal.",
+    "fires": "Interdisciplinary Research Collaboration",
+    "lorem_ipsum": "To achieve the mentioned objectives, an interdisciplinary team from the Department of Environment and Planning from the University of Aveiro was formed, and researchers from the National Institute for Space Research (Brazil) were invited to join the team. These researchers include specialists in high-performance computing, meteorological and fire propagation modeling, characterization of smoke emission and dispersion, and impacts on air quality and human health.",
     "models": "Numerical models",
-    "models_description": "In the realm of environmental research and fire management, theutilization of advanced modeling tools is indispensable, and one suchpowerful framework is the WRF-CHIMERE chemical transport model. Thisintegrated system combines the Weather Research and Forecasting (WRF)model with the CHIMERE chemistry-transport model, enabling acomprehensive understanding of the atmospheric dynamics and chemicalprocesses associated with forest fires. WRF-CHIMERE excels in simulatingthe intricate interplay between meteorological conditions and thedispersion of pollutants emitted during wildfires. The modelincorporates complex terrain features and provides a robust platform forassessing the spatial and temporal distribution of pollutants arisingfrom forest fires. Researchers leverage WRF-CHIMERE to gain insightsinto the impact of wildfires on air quality, helping to formulateinformed strategies for mitigation and resource allocation. Through itssophisticated algorithms and dynamic representation of atmosphericinteractions, WRF-CHIMERE stands as a cornerstone in advancing ourcomprehension of the complex dynamics involved in forest fire modeling.",
+    "models_description": "The BRAMS model is a system that represents transfer processes on the Earth's surface, as well as dynamic and thermodynamic processes in the troposphere and stratosphere. It includes the water cycle and atmospheric chemical processes. It also includes the thermodynamic and dynamic processes originated by fires, which result in interactions of heat and smoke fluxes with turbulent interactions in the atmosphere.",
     "air_quality": "Air Quality Index",
     "air_quality_description": "The Air Quality Index (AQI) is a numerical scale used to communicate how polluted the air currently is or how polluted it is forecast to become. It provides a way to quantify and communicate the impact of air pollutants on public health. The AQI presented in this website is calculated based on the hourly concentrations of several major air pollutants, including particulate matter (PM10 and PM2.5), ground-level ozone (O<sub>3</sub>) and nitrogen dioxide (NO<sub>2</sub>).",
     "pollutant": "Pollutant",
@@ -72,15 +72,15 @@
     "100-130": "100-130",
     "130-240": "130-240",
     "240": "240",
-    "smokestorm": "The SMOKESTORM research project",
-    "smokestorm_description": "Lorem ipsum dolor sit amet <a href='http://smokestorm.web.ua.pt/en/project'>SMOKESTORM</a>, consectetur adipiscing elit. Fusce vehicula ipsum quis nunc ultrices, indignissim tellus viverra. Sed tristique, mauris quis fermentumtincidunt, libero justo mattis elit, vel laoreet odio turpis nec libero.In efficitur justo nec justo consequat, vitae convallis lectus suscipit.Proin et odio sit amet odio convallis fringilla. Suspendisse potenti.Sed et cursus arcu. Curabitur vel neque eget metus ullamcorper posuerevel id ligula. Maecenas a fringilla velit, sit amet tincidunt dui.Integer non efficitur nisi. Nulla facilisi. Vivamus auctor auctor urna,vitae tincidunt libero pellentesque eu. Nunc vel mi id lectus gravidadictum. Quisque id bibendum nulla. Sed sollicitudin, odio ac fermentumultrices, lacus orci facilisis justo, nec interdum metus orci vitae ex."
+    "Firesmoke": "The FIRESMOKE research project",
+    "Firesmoke_description": "The <a href='http://smokestorm.web.ua.pt/en/project'>FIRESMOKE</a> project video addresses the journey, challenges, and solutions found to simulate the propagation of smoke from forest fires and its effects on the atmosphere."
   },
   "Nav": {
     "home": "Previsão",
-    "methodology": "Metodologia",
-    "smokestorm": "SmokeStorm"
+    "methodology": "System",
+    "Firesmoke": "Firesmoke"
   },
   "Meta": {
-    "title": "SmokeStorm"
+    "title": "Firesmoke"
   }
 }
