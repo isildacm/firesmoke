@@ -27,7 +27,7 @@ const MethodologyContent = () => {
         ></p>
         <img
           src="/esquema_BRAMS_SFIRE.jpg" 
-          alt="BRAMS" width="1167" height="569"
+          alt="BRAMS" width="933" height="455"
         />
       </div>
       <h2
