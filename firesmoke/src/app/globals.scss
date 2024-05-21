@@ -8,6 +8,10 @@ body {
   --navbar-height: 56px;
 }
 
+.justified-text {
+  text-align: justify;
+}
+
 .sidebar {
   width: var(--sidebar-width);
   height: calc(100% - var(--navbar-height));
