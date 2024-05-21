@@ -11,19 +11,19 @@ const MethodologyContent = () => {
           __html: t.raw("title"),
         }}
       ></h1>
-      <p dangerouslySetInnerHTML={{ __html: t.raw("general_content") }}></p>
+      <p className="justified-text" dangerouslySetInnerHTML={{ __html: t.raw("general_content") }}></p>
       <h2
         className="mt-4"
         dangerouslySetInnerHTML={{ __html: t.raw("fires") }}
       ></h2>
-      <p dangerouslySetInnerHTML={{ __html: t.raw("lorem_ipsum") }}></p>
+      <p className="justified-text" dangerouslySetInnerHTML={{ __html: t.raw("lorem_ipsum") }}></p>
       <h2
         className="mt-4"
         dangerouslySetInnerHTML={{ __html: t.raw("models") }}
       ></h2>
       <div className="d-flex flex-column flex-lg-row gap-4">
         <p
-          dangerouslySetInnerHTML={{ __html: t.raw("models_description") }}
+          className="justified-text" dangerouslySetInnerHTML={{ __html: t.raw("models_description") }}
         ></p>
         <img
           src="/esquema_BRAMS_SFIRE.jpg" 
@@ -35,7 +35,7 @@ const MethodologyContent = () => {
         dangerouslySetInnerHTML={{ __html: t.raw("air_quality") }}
       ></h2>
       <p
-        dangerouslySetInnerHTML={{ __html: t.raw("air_quality_description") }}
+        className="justified-text" dangerouslySetInnerHTML={{ __html: t.raw("air_quality_description") }}
       ></p>
       <table className="w-100" border={1} cellPadding={2} cellSpacing={0}>
         <thead>
@@ -104,7 +104,7 @@ const MethodologyContent = () => {
       <h2 className="mt-4">{t.raw("Firesmoke")}</h2>
 
       <p
-        dangerouslySetInnerHTML={{ __html: t.raw("Firesmoke_description") }}
+        className="justified-text" dangerouslySetInnerHTML={{ __html: t.raw("Firesmoke_description") }}
       ></p>
 
       <video className="mx-auto d-block" width="75%" height="" controls>
