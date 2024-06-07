@@ -6,7 +6,7 @@
         "indexes": "Qualidade do ar",
         "focal": "Foco de incêndio",
         "back": "Voltar",
-        "subtitle": "Previsão numérica realizada com o sistema SmokeStorm"
+        "subtitle": "Previsão numérica realizada com o sistema Firesmoke"
       },
       "available_poluents": "Escolha uma variável",
       "prediction_time": "Previsão:",
