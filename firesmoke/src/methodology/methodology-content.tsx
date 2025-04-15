@@ -106,13 +106,17 @@ const MethodologyContent = () => {
       <p
         className="justified-text" dangerouslySetInnerHTML={{ __html: t.raw("Firesmoke_description") }}
       ></p>
-
-      <video className="mx-auto d-block" width="75%" height="" controls>
-        <source
-          src="http://smokestorm.web.ua.pt/media/UA_SmokeStorm_Video_FINAL-HD-compress.mov"
-          type="video/mp4"
-        />
-      </video>
+      <div className="mx-auto d-block" style={{ width: "75%", aspectRatio: "16/9" }}>
+       <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/15n7rf44abQ?start=1"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+       ></iframe>
+      </div>
     </div>
   );
 };
