@@ -94,37 +94,47 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
 
   useEffect(() => {
   if (map && map.current && currentLayer) {
+    const mapInstance = map.current;
     const layerId = "base-map-background";
     const sourceId = "base-map";
 
-    // Remove camada e source anteriores (se existirem)
-    if (map.current.getLayer(layerId)) {
-      map.current.removeLayer(layerId);
-    }
-    if (map.current.getSource(sourceId)) {
-      map.current.removeSource(sourceId);
-    }
+    const addBaseLayer = () => {
+      // Remove camada e fonte antigas (se existirem)
+      if (mapInstance.getLayer(layerId)) {
+        mapInstance.removeLayer(layerId);
+      }
+      if (mapInstance.getSource(sourceId)) {
+        mapInstance.removeSource(sourceId);
+      }
 
-    // Adiciona nova camada com versão anti-cache
-    const updatedLayer = {
-      ...currentLayer,
-      url: `${currentLayer.url}?v=${new Date().getTime()}`
+      // Adiciona nova camada com URL cache-busting
+      const updatedLayer = {
+        ...currentLayer,
+        url: `${currentLayer.url}?v=${new Date().getTime()}`
+      };
+
+      mapInstance.addSource(sourceId, {
+        type: "image",
+        ...updatedLayer,
+      });
+
+      mapInstance.addLayer({
+        id: layerId,
+        type: "raster",
+        source: sourceId,
+        paint: {
+          "raster-fade-duration": 0,
+          "raster-opacity": 0.5,
+        },
+      });
     };
 
-    map.current.addSource(sourceId, {
-      type: "image",
-      ...updatedLayer,
-    });
-
-    map.current.addLayer({
-      id: layerId,
-      type: "raster",
-      source: sourceId,
-      paint: {
-        "raster-fade-duration": 0,
-        "raster-opacity": 0.5,
-      },
-    });
+    // Só adiciona se o estilo estiver carregado
+    if (mapInstance.isStyleLoaded()) {
+      addBaseLayer();
+    } else {
+      mapInstance.once("styledata", addBaseLayer);
+    }
   }
 }, [currentLayer]);
   const fitToLocal = () => {
