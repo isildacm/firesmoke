@@ -93,14 +93,17 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
   };
 
   useEffect(() => {
-    if (map && map.current) {
-      const layer = map.current.getLayer("base-map-background") as RasterLayer;
-      if (layer && layer.source && currentLayer) {
-        const source = layer.source as string;
-        const updatedLayer = {
-      ...currentLayer,
-      url: `${currentLayer.url}?v=${new Date().getTime()}`
-    };
+  if (map && map.current) {
+    const layer = map.current.getLayer("base-map-background") as RasterLayer;
+
+    if (layer && layer.source && currentLayer) {
+      const source = layer.source as string;
+
+      // Adiciona a versão timestamp ao URL da imagem
+      const updatedLayer = {
+        ...currentLayer,
+        url: `${currentLayer.url}?v=${new Date().getTime()}`
+      };
 
     (map.current.getSource(source) as ImageSource).updateImage(updatedLayer);
       } else if (currentLayer) {
