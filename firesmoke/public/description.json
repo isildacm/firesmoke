@@ -3,329 +3,37 @@
     "poluents": [
       {
         "name": "IQA",
-        "intervals": [0, 50, 100, 150, 200, 250],
+        "intervals": [0, 50, 100, 200, 200, 250],
         "unit": " "
       },
       {
         "name": "Visibility",
-        "intervals": [0, 50, 100, 150, 200, 250],
+        "intervals": [0, 50, 100, 200, 200, 250],
         "unit": "m"
       },
       {
         "name": "PM10",
-        "intervals": [0, 50, 100, 150, 200, 250],
+        "intervals": [0, 50, 100, 200, 200, 250],
         "unit": "μg/m³"
       },
       {
         "name": "PM2.5",
-        "intervals": [0, 50, 100, 150, 200, 250],
+        "intervals": [0, 50, 100, 200, 200, 250],
         "unit": "μg/m³"
       },
       {
         "name": "NO2",
-        "intervals": [0, 50, 100, 150, 200, 250],
+        "intervals": [0, 50, 100, 200, 200, 250],
         "unit": "μg/m³"
       },
       {
         "name": "O3",
-        "intervals": [0, 50, 100, 150, 200, 250],
+        "intervals": [0, 50, 100, 200, 200, 250],
         "unit": "μg/m³"
       }
     ],
     "predictions": {
       "NO2": [
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072000.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072001.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072002.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072003.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072004.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072005.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072006.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072007.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072008.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072009.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072010.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072011.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072012.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072013.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072014.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072015.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072016.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072017.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072018.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072019.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072020.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072021.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072022.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072023.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072100.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072101.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072102.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072103.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072104.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072105.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072106.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072107.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072108.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072109.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072110.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072111.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072112.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072113.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072114.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072115.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072116.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072117.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072118.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072119.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072120.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072121.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072122.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_NO2_2022072123.png"
-        }
-      ],
-      "Visibility": [
-         {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072000.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072001.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072002.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072003.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072004.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072005.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072006.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072007.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072008.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072009.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072010.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072011.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072012.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072013.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072014.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072015.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072016.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072017.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072018.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072019.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072020.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072021.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072022.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072023.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072100.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072101.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072102.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072103.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072104.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072105.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072106.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072107.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072108.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072109.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072110.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072111.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072112.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072113.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072114.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072115.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072116.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072117.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072118.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072119.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072120.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072121.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072122.png"
-        },
-        {
-          "fileName": "CHIMERE/CHIMERE_visb_2022072123.png"
-        }
-      ],
-       "O3": [
         {
           "fileName": "CHIMERE/CHIMERE_O3_2022072000.png"
         },
@@ -471,7 +179,299 @@
           "fileName": "CHIMERE/CHIMERE_O3_2022072123.png"
         }
       ],
-   "PM10": [
+      "Visibility": [
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072000.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072001.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072002.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072003.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072004.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072005.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072006.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072007.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072008.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072009.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072010.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072011.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072012.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072013.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072014.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072015.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072021.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072017.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072018.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072019.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072020.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072021.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072022.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072023.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072100.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072101.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072102.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072103.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072104.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072105.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072106.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072107.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072108.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072109.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072110.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072111.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072112.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072113.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072114.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072115.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072116.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072117.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072118.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072119.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072120.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072121.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072122.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072123.png"
+        }
+      ],
+      "O3": [
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072000.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072001.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072002.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072003.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072004.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072005.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072006.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072007.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072008.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072009.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072010.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072011.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072012.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072013.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072014.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072015.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072021.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072017.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072018.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072019.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072020.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072021.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072022.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072023.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072100.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072101.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072102.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072103.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072104.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072105.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072106.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072107.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072108.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072109.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072110.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072111.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072112.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072113.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072114.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072115.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072116.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072117.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072118.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072119.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072120.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072121.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072122.png"
+        },
+        {
+          "fileName": "CHIMERE/CHIMERE_O3_2022072123.png"
+        }
+      ],
+      "PM10": [
         {
           "fileName": "CHIMERE/CHIMERE_PM10_2022072000.png"
         },
@@ -617,7 +617,7 @@
           "fileName": "CHIMERE/CHIMERE_PM10_2022072123.png"
         }
       ],
-   "PM2.5": [
+      "PM2.5": [
         {
           "fileName": "CHIMERE/CHIMERE_PM25_2022072000.png"
         },
@@ -765,148 +765,148 @@
       ],
       "IQA": [
         {
-          "fileName": "CHIMERE/CHIMERE_IQA_2022071500.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072000.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_IQA_2022071501.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072001.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_IQA_2022071502.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072002.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_IQA_2022071503.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072003.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071504.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072004.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071505.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072005.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071506.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072006.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071507.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072007.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071508.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072008.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071509.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072009.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071510.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072010.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071511.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072011.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071512.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072012.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071513.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072013.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071514.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072014.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071515.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072015.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071516.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072016.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071517.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072017.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071518.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072018.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071519.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072019.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071520.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072020.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071521.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072021.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071522.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072022.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071523.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072023.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071600.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072100.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071601.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072101.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071602.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072102.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071603.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072103.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071604.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072104.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071605.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072105.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071606.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072106.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071607.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072107.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071608.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072108.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071609.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072109.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071610.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072110.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071611.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072111.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071612.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072112.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071613.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072113.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071614.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072114.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071615.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072115.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071616.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072116.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071617.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072117.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071618.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072118.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071619.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072119.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071620.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072120.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071621.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072121.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071622.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072122.png"
         },
         {
-          "fileName": "CHIMERE/CHIMERE_PM25_2022071623.png"
+          "fileName": "CHIMERE/CHIMERE_PM25_2022072123.png"
         }
       ]
     },
@@ -924,32 +924,32 @@
       "poluents": [
         {
           "name": "IQA",
-          "intervals": [0, 50, 100, 150, 200, 250],
+          "intervals": [0, 50, 100, 200, 200, 250],
           "unit": "UNIDADE"
         },
         {
           "name": "Visibility",
-          "intervals": [0, 50, 100, 150, 200, 250],
+          "intervals": [0, 50, 100, 200, 200, 250],
           "unit": "UNIDADE"
         },
         {
           "name": "PM10",
-          "intervals": [0, 50, 100, 150, 200, 250],
+          "intervals": [0, 50, 100, 200, 200, 250],
           "unit": "ug/m3"
         },
         {
           "name": "PM2.5",
-          "intervals": [0, 50, 100, 150, 200, 250],
+          "intervals": [0, 50, 100, 200, 200, 250],
           "unit": "UNIDADE"
         },
         {
           "name": "co",
-          "intervals": [0, 50, 100, 150, 200, 250],
+          "intervals": [0, 50, 100, 200, 200, 250],
           "unit": "UNIDADE"
         },
         {
           "name": "no2",
-          "intervals": [0, 50, 100, 150, 200, 250],
+          "intervals": [0, 50, 100, 200, 200, 250],
           "unit": "UNIDADE"
         }
       ],
@@ -962,230 +962,230 @@
       "predictions": {
         "co": [
           {
-            "fileName": "chernobyl/disperChern_2017101600.png"
+            "fileName": "chernobyl/disperChern_2022072100.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101601.png"
+            "fileName": "chernobyl/disperChern_2022072101.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101602.png"
+            "fileName": "chernobyl/disperChern_2022072102.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101603.png"
+            "fileName": "chernobyl/disperChern_2022072103.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101604.png"
+            "fileName": "chernobyl/disperChern_2022072104.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101605.png"
+            "fileName": "chernobyl/disperChern_2022072105.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101606.png"
+            "fileName": "chernobyl/disperChern_2022072106.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101607.png"
+            "fileName": "chernobyl/disperChern_2022072107.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101608.png"
+            "fileName": "chernobyl/disperChern_2022072108.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101609.png"
+            "fileName": "chernobyl/disperChern_2022072109.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101610.png"
+            "fileName": "chernobyl/disperChern_2022072110.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101611.png"
+            "fileName": "chernobyl/disperChern_2022072111.png"
           }
         ],
         "PM10": [
           {
-            "fileName": "chernobyl/disperChern_2017101600.png"
+            "fileName": "chernobyl/disperChern_2022072100.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101601.png"
+            "fileName": "chernobyl/disperChern_2022072101.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101602.png"
+            "fileName": "chernobyl/disperChern_2022072102.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101603.png"
+            "fileName": "chernobyl/disperChern_2022072103.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101604.png"
+            "fileName": "chernobyl/disperChern_2022072104.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101605.png"
+            "fileName": "chernobyl/disperChern_2022072105.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101606.png"
+            "fileName": "chernobyl/disperChern_2022072106.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101607.png"
+            "fileName": "chernobyl/disperChern_2022072107.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101608.png"
+            "fileName": "chernobyl/disperChern_2022072108.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101609.png"
+            "fileName": "chernobyl/disperChern_2022072109.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101610.png"
+            "fileName": "chernobyl/disperChern_2022072110.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101611.png"
+            "fileName": "chernobyl/disperChern_2022072111.png"
           }
         ],
         "no2": [
           {
-            "fileName": "chernobyl/disperChern_2017101600.png"
+            "fileName": "chernobyl/disperChern_2022072100.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101601.png"
+            "fileName": "chernobyl/disperChern_2022072101.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101602.png"
+            "fileName": "chernobyl/disperChern_2022072102.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101603.png"
+            "fileName": "chernobyl/disperChern_2022072103.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101604.png"
+            "fileName": "chernobyl/disperChern_2022072104.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101605.png"
+            "fileName": "chernobyl/disperChern_2022072105.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101606.png"
+            "fileName": "chernobyl/disperChern_2022072106.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101607.png"
+            "fileName": "chernobyl/disperChern_2022072107.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101608.png"
+            "fileName": "chernobyl/disperChern_2022072108.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101609.png"
+            "fileName": "chernobyl/disperChern_2022072109.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101610.png"
+            "fileName": "chernobyl/disperChern_2022072110.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101611.png"
+            "fileName": "chernobyl/disperChern_2022072111.png"
           }
         ],
         "Visibility": [
           {
-            "fileName": "chernobyl/disperChern_2017101600.png"
+            "fileName": "chernobyl/disperChern_2022072100.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101601.png"
+            "fileName": "chernobyl/disperChern_2022072101.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101602.png"
+            "fileName": "chernobyl/disperChern_2022072102.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101603.png"
+            "fileName": "chernobyl/disperChern_2022072103.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101604.png"
+            "fileName": "chernobyl/disperChern_2022072104.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101605.png"
+            "fileName": "chernobyl/disperChern_2022072105.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101606.png"
+            "fileName": "chernobyl/disperChern_2022072106.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101607.png"
+            "fileName": "chernobyl/disperChern_2022072107.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101608.png"
+            "fileName": "chernobyl/disperChern_2022072108.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101609.png"
+            "fileName": "chernobyl/disperChern_2022072109.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101610.png"
+            "fileName": "chernobyl/disperChern_2022072110.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101611.png"
+            "fileName": "chernobyl/disperChern_2022072111.png"
           }
         ],
         "PM2.5": [
           {
-            "fileName": "chernobyl/disperChern_2017101600.png"
+            "fileName": "chernobyl/disperChern_2022072100.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101601.png"
+            "fileName": "chernobyl/disperChern_2022072101.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101602.png"
+            "fileName": "chernobyl/disperChern_2022072102.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101603.png"
+            "fileName": "chernobyl/disperChern_2022072103.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101604.png"
+            "fileName": "chernobyl/disperChern_2022072104.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101605.png"
+            "fileName": "chernobyl/disperChern_2022072105.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101606.png"
+            "fileName": "chernobyl/disperChern_2022072106.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101607.png"
+            "fileName": "chernobyl/disperChern_2022072107.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101608.png"
+            "fileName": "chernobyl/disperChern_2022072108.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101609.png"
+            "fileName": "chernobyl/disperChern_2022072109.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101610.png"
+            "fileName": "chernobyl/disperChern_2022072110.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101611.png"
+            "fileName": "chernobyl/disperChern_2022072111.png"
           }
         ],
         "IQA": [
           {
-            "fileName": "chernobyl/disperChern_2017101600.png"
+            "fileName": "chernobyl/disperChern_2022072100.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101601.png"
+            "fileName": "chernobyl/disperChern_2022072101.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101602.png"
+            "fileName": "chernobyl/disperChern_2022072102.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101603.png"
+            "fileName": "chernobyl/disperChern_2022072103.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101604.png"
+            "fileName": "chernobyl/disperChern_2022072104.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101605.png"
+            "fileName": "chernobyl/disperChern_2022072105.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101606.png"
+            "fileName": "chernobyl/disperChern_2022072106.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101607.png"
+            "fileName": "chernobyl/disperChern_2022072107.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101608.png"
+            "fileName": "chernobyl/disperChern_2022072108.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101609.png"
+            "fileName": "chernobyl/disperChern_2022072109.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101610.png"
+            "fileName": "chernobyl/disperChern_2022072110.png"
           },
           {
-            "fileName": "chernobyl/disperChern_2017101611.png"
+            "fileName": "chernobyl/disperChern_2022072111.png"
           }
         ]
       }
