@@ -22,12 +22,12 @@
         "unit": "μg/m³"
       },
       {
-        "name": "PM25",
+        "name": "NO2",
         "intervals": [0, 50, 100, 200, 200, 250],
         "unit": "μg/m³"
       },
       {
-        "name": "PM25",
+        "name": "O3",
         "intervals": [0, 50, 100, 200, 200, 250],
         "unit": "μg/m³"
       }
