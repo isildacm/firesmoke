@@ -93,24 +93,40 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
   };
 
   useEffect(() => {
-  if (map && map.current) {
-    const layer = map.current.getLayer("base-map-background") as RasterLayer;
+  if (map && map.current && currentLayer) {
+    const layerId = "base-map-background";
+    const sourceId = "base-map";
 
-    if (layer && layer.source && currentLayer) {
-      const source = layer.source as string;
-
-      // Adiciona a versão timestamp ao URL da imagem
-      const updatedLayer = {
-        ...currentLayer,
-        url: `${currentLayer.url}?v=${new Date().getTime()}`
-      };
-
-    (map.current.getSource(source) as ImageSource).updateImage(updatedLayer);
-      } else if (currentLayer) {
-        addLayer();
-      }
+    // Remove camada e source anteriores (se existirem)
+    if (map.current.getLayer(layerId)) {
+      map.current.removeLayer(layerId);
     }
-  }, [currentLayer]);
+    if (map.current.getSource(sourceId)) {
+      map.current.removeSource(sourceId);
+    }
+
+    // Adiciona nova camada com versão anti-cache
+    const updatedLayer = {
+      ...currentLayer,
+      url: `${currentLayer.url}?v=${new Date().getTime()}`
+    };
+
+    map.current.addSource(sourceId, {
+      type: "image",
+      ...updatedLayer,
+    });
+
+    map.current.addLayer({
+      id: layerId,
+      type: "raster",
+      source: sourceId,
+      paint: {
+        "raster-fade-duration": 0,
+        "raster-opacity": 0.5,
+      },
+    });
+  }
+}, [currentLayer]);
   const fitToLocal = () => {
     if (
       map.current &&
