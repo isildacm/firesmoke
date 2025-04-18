@@ -12,14 +12,6 @@ import {
   useCurrentBaseMapBackground,
 } from "./base-map-context";
 
-// AQUI: função que garante que a imagem está carregada antes de ser mostrada no mapa
-const preloadImage = (src: string): Promise<string> =>
-  new Promise((resolve) => {
-    const img = new Image();
-    img.onload = () => resolve(src);
-    img.src = src;
-  });
-
 const DEFAULT_POLUENT_VIEW = "Visibility";
 
 const useLocalMap = (map: MutableRefObject<Map | null>) => {
@@ -82,7 +74,6 @@ const useNationalMap = (map: MutableRefObject<Map | null>) => {
 const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
   const currentLayer = useCurrentBaseMapBackground();
   const { backgroundMapType } = useContext(BaseMapContext);
-
   const addLayer = () => {
     if (map.current && currentLayer && map.current.isStyleLoaded()) {
       map.current.addSource("base-map", {
@@ -94,31 +85,27 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
         type: "raster",
         source: "base-map",
         paint: {
-          "raster-fade-duration": 300,
-          "raster-opacity": 1,
+          "raster-fade-duration": 0,
+          "raster-opacity": 0.5,
         },
       });
     }
   };
 
   useEffect(() => {
-    const update = async () => {
-      if (map && map.current) {
-        const layer = map.current.getLayer("base-map-background") as RasterLayer;
-        if (layer && layer.source && currentLayer) {
-          const source = layer.source as string;
+    if (map && map.current) {
+      const layer = map.current.getLayer("base-map-background") as RasterLayer;
+      if (layer && layer.source && currentLayer) {
+        const source = layer.source as string;
 
-          await preloadImage(currentLayer.url);
-          (map.current.getSource(source) as ImageSource).updateImage(currentLayer);
-        } else if (currentLayer) {
-          addLayer();
-        }
+        (map.current.getSource(source) as ImageSource).updateImage(
+          currentLayer,
+        );
+      } else if (currentLayer) {
+        addLayer();
       }
-    };
-
-    update();
+    }
   }, [currentLayer]);
-
   const fitToLocal = () => {
     if (
       map.current &&
@@ -132,7 +119,6 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
       ]);
     }
   };
-
   useEffect(() => {
     if (map && map.current && currentLayer) {
       fitToLocal();
