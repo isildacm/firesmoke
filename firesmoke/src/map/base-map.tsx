@@ -99,49 +99,49 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
   const layerId = "base-map-background";
   const sourceId = "base-map";
 
-  const addBaseLayer = () => {
+  const addOrUpdateBaseLayer = () => {
     if (!mapInstance?.style || !mapInstance.isStyleLoaded()) {
       console.log("Estilo ainda não carregado. Esperando...");
       return;
     }
 
-    // Remover camada e fonte anteriores
-    if (mapInstance.getLayer(layerId)) {
-      mapInstance.removeLayer(layerId);
-    }
-    if (mapInstance.getSource(sourceId)) {
-      mapInstance.removeSource(sourceId);
-    }
-
-    // Adiciona nova camada com versão de cache-busting
     const updatedLayer = {
       ...currentLayer,
-      url: `${currentLayer.url}?v=${new Date().getTime()}`
+      url: `${currentLayer.url}?v=${new Date().getTime()}` // evita cache
     };
 
-    mapInstance.addSource(sourceId, {
-      type: "image",
-      ...updatedLayer,
-    });
+    if (mapInstance.getSource(sourceId)) {
+      // Substitui apenas a imagem na mesma source
+      console.log("Atualizando imagem existente.");
+      (mapInstance.getSource(sourceId) as mapboxgl.ImageSource).updateImage({
+        url: updatedLayer.url,
+        coordinates: updatedLayer.coordinates,
+      });
+    } else {
+      // Adiciona nova source e layer se não existirem
+      console.log("Adicionando nova source e camada.");
+      mapInstance.addSource(sourceId, {
+        type: "image",
+        ...updatedLayer,
+      });
 
-    mapInstance.addLayer({
-      id: layerId,
-      type: "raster",
-      source: sourceId,
-      paint: {
-        "raster-fade-duration": 0,
-        "raster-opacity": 0.5,
-      },
-    });
-
-    console.log("Camada adicionada com sucesso!");
+      mapInstance.addLayer({
+        id: layerId,
+        type: "raster",
+        source: sourceId,
+        paint: {
+          "raster-fade-duration": 0,
+          "raster-opacity": 0.5,
+        },
+      });
+    }
   };
 
   if (mapInstance.isStyleLoaded()) {
-    addBaseLayer();
+    addOrUpdateBaseLayer();
   } else {
     console.log("Aguardando evento 'styledata' para adicionar camada.");
-    mapInstance.once("styledata", addBaseLayer);
+    mapInstance.once("styledata", addOrUpdateBaseLayer);
   }
 }, [currentLayer]);
   const fitToLocal = () => {
