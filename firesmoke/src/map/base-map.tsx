@@ -12,6 +12,14 @@ import {
   useCurrentBaseMapBackground,
 } from "./base-map-context";
 
+// ✅ AQUI: função que garante que a imagem está carregada antes de ser mostrada no mapa
+const preloadImage = (src: string): Promise<string> =>
+  new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(src);
+    img.src = src;
+  });
+
 const DEFAULT_POLUENT_VIEW = "Visibility";
 
 const useLocalMap = (map: MutableRefObject<Map | null>) => {
@@ -52,54 +60,21 @@ const useNationalMap = (map: MutableRefObject<Map | null>) => {
   };
 
   useEffect(() => {
-    if (
-      map &&
-      map.current &&
-      ["indexes", "poluents"].includes(backgroundMapType)
-    ) {
-      addMarkers();
-    } else {
-      markers.forEach((m) => {
-        m.getElement().hidden = true;
-        m.remove();
-      });
-      setMarkers([]);
-      markersLoaded.current = false;
-    }
-  }, [backgroundMapType]);
-
-  return addMarkers;
-};
-
-const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
-  const currentLayer = useCurrentBaseMapBackground();
-  const { backgroundMapType } = useContext(BaseMapContext);
-  const addLayer = () => {
-    if (map.current && currentLayer && map.current.isStyleLoaded()) {
-      map.current.addSource("base-map", {
-        type: "image",
-        ...currentLayer,
-      });
-      map.current.addLayer({
-        id: "base-map-background",
-        type: "raster",
-        source: "base-map",
-        paint: {
-          "raster-fade-duration": 0,
-          "raster-opacity": 0.5,
-        },
-      });
-    }
-  };
-
-  useEffect(() => {
   if (!map || !map.current || !currentLayer) return;
 
   const mapInstance = map.current;
   const layerId = "base-map-background";
   const sourceId = "base-map";
 
-  const addOrUpdateBaseLayer = () => {
+  // Função auxiliar para pré-carregar imagem no browser
+  const preloadImage = (src: string): Promise<string> =>
+    new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve(src);
+      img.src = src;
+    });
+
+  const addOrUpdateBaseLayer = async () => {
     if (!mapInstance?.style || !mapInstance.isStyleLoaded()) {
       console.log("Estilo ainda não carregado. Esperando...");
       return;
@@ -107,19 +82,20 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
 
     const updatedLayer = {
       ...currentLayer,
-      url: `${currentLayer.url}?v=${new Date().getTime()}` // evita cache
+      url: `${currentLayer.url}?v=${new Date().getTime()}`, // evita cache
     };
 
+    // Espera até a nova imagem estar carregada no browser
+    await preloadImage(updatedLayer.url);
+
     if (mapInstance.getSource(sourceId)) {
-      // Substitui apenas a imagem na mesma source
-      console.log("Atualizando imagem existente.");
+      console.log("Atualizando imagem existente com updateImage()");
       (mapInstance.getSource(sourceId) as mapboxgl.ImageSource).updateImage({
         url: updatedLayer.url,
         coordinates: updatedLayer.coordinates,
       });
     } else {
-      // Adiciona nova source e layer se não existirem
-      console.log("Adicionando nova source e camada.");
+      console.log("Adicionando nova source e camada raster");
       mapInstance.addSource(sourceId, {
         type: "image",
         ...updatedLayer,
@@ -130,8 +106,8 @@ const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
         type: "raster",
         source: sourceId,
         paint: {
-          "raster-fade-duration": 0,
-          "raster-opacity": 0.5,
+          "raster-fade-duration": 300, // transição suave em ms
+          "raster-opacity": 1,
         },
       });
     }
