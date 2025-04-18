@@ -12,7 +12,7 @@ import {
   useCurrentBaseMapBackground,
 } from "./base-map-context";
 
-// ✅ AQUI: função que garante que a imagem está carregada antes de ser mostrada no mapa
+// AQUI: função que garante que a imagem está carregada antes de ser mostrada no mapa
 const preloadImage = (src: string): Promise<string> =>
   new Promise((resolve) => {
     const img = new Image();
@@ -60,66 +60,65 @@ const useNationalMap = (map: MutableRefObject<Map | null>) => {
   };
 
   useEffect(() => {
-  if (!map || !map.current || !currentLayer) return;
-
-  const mapInstance = map.current;
-  const layerId = "base-map-background";
-  const sourceId = "base-map";
-
-  // Função auxiliar para pré-carregar imagem no browser
-  const preloadImage = (src: string): Promise<string> =>
-    new Promise((resolve) => {
-      const img = new Image();
-      img.onload = () => resolve(src);
-      img.src = src;
-    });
-
-  const addOrUpdateBaseLayer = async () => {
-    if (!mapInstance?.style || !mapInstance.isStyleLoaded()) {
-      console.log("Estilo ainda não carregado. Esperando...");
-      return;
-    }
-
-    const updatedLayer = {
-      ...currentLayer,
-      url: `${currentLayer.url}?v=${new Date().getTime()}`, // evita cache
-    };
-
-    // Espera até a nova imagem estar carregada no browser
-    await preloadImage(updatedLayer.url);
-
-    if (mapInstance.getSource(sourceId)) {
-      console.log("Atualizando imagem existente com updateImage()");
-      (mapInstance.getSource(sourceId) as mapboxgl.ImageSource).updateImage({
-        url: updatedLayer.url,
-        coordinates: updatedLayer.coordinates,
-      });
+    if (
+      map &&
+      map.current &&
+      ["indexes", "poluents"].includes(backgroundMapType)
+    ) {
+      addMarkers();
     } else {
-      console.log("Adicionando nova source e camada raster");
-      mapInstance.addSource(sourceId, {
-        type: "image",
-        ...updatedLayer,
+      markers.forEach((m) => {
+        m.getElement().hidden = true;
+        m.remove();
       });
+      setMarkers([]);
+      markersLoaded.current = false;
+    }
+  }, [backgroundMapType]);
 
-      mapInstance.addLayer({
-        id: layerId,
+  return addMarkers;
+};
+
+const useCurrentLayer = (map: MutableRefObject<Map | null>) => {
+  const currentLayer = useCurrentBaseMapBackground();
+  const { backgroundMapType } = useContext(BaseMapContext);
+
+  const addLayer = () => {
+    if (map.current && currentLayer && map.current.isStyleLoaded()) {
+      map.current.addSource("base-map", {
+        type: "image",
+        ...currentLayer,
+      });
+      map.current.addLayer({
+        id: "base-map-background",
         type: "raster",
-        source: sourceId,
+        source: "base-map",
         paint: {
-          "raster-fade-duration": 300, // transição suave em ms
+          "raster-fade-duration": 300,
           "raster-opacity": 1,
         },
       });
     }
   };
 
-  if (mapInstance.isStyleLoaded()) {
-    addOrUpdateBaseLayer();
-  } else {
-    console.log("Aguardando evento 'styledata' para adicionar camada.");
-    mapInstance.once("styledata", addOrUpdateBaseLayer);
-  }
-}, [currentLayer]);
+  useEffect(() => {
+    const update = async () => {
+      if (map && map.current) {
+        const layer = map.current.getLayer("base-map-background") as RasterLayer;
+        if (layer && layer.source && currentLayer) {
+          const source = layer.source as string;
+
+          await preloadImage(currentLayer.url);
+          (map.current.getSource(source) as ImageSource).updateImage(currentLayer);
+        } else if (currentLayer) {
+          addLayer();
+        }
+      }
+    };
+
+    update();
+  }, [currentLayer]);
+
   const fitToLocal = () => {
     if (
       map.current &&
@@ -133,6 +132,7 @@ const useNationalMap = (map: MutableRefObject<Map | null>) => {
       ]);
     }
   };
+
   useEffect(() => {
     if (map && map.current && currentLayer) {
       fitToLocal();
